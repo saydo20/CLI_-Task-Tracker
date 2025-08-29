@@ -28,6 +28,8 @@ createdAt: Date and time when the task was created
 
 updatedAt: Date and time when the task was last updated
 
+Installation & Setup
+
 Ensure your development environment is ready:
 
 Install your preferred programming language (Python, JavaScript, etc.)
