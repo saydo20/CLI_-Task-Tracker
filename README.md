@@ -1,4 +1,4 @@
-📝 Task Tracker CLI
+[📝 Task Tracker CLI
 
 A Command Line Interface (CLI) application to manage your tasks and to-do list.
 Keep track of what you need to do, what you’re currently working on, and what’s done—all from the terminal!
@@ -88,4 +88,4 @@ Finalize project with clean code and documentation
 
 🎉 License
 
-This project is open-source and free to use.
+This project is open-source and free to use.](https://roadmap.sh/projects/task-tracker)
