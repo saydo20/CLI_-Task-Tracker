@@ -1,54 +1,53 @@
-Task Tracker CLI
+📝 Task Tracker CLI
 
-A simple Command Line Interface (CLI) application to track and manage your tasks and to-do list. This project helps you practice working with the filesystem, handling user input, and building CLI applications.
+A Command Line Interface (CLI) application to manage your tasks and to-do list.
+Keep track of what you need to do, what you’re currently working on, and what’s done—all from the terminal!
 
-Features
+⚡ Features
 
-Add, update, and delete tasks
+Add new tasks
 
-Mark tasks as in progress or done
+Update existing tasks
 
-List all tasks
+Delete tasks
 
-List tasks filtered by status: done, todo, or in-progress
+Mark tasks as in-progress or done
 
-Persistent storage using a JSON file
+List tasks by status: todo, in-progress, done
 
-Task Properties
+Store tasks persistently using a JSON file
 
-Each task has the following properties:
+📋 Task Properties
 
-id: Unique identifier for the task
+Each task includes:
 
-description: Short description of the task
+Property	Description
+id	Unique identifier for the task
+description	Short description of the task
+status	Task status (todo, in-progress, done)
+createdAt	Date and time when the task was created
+updatedAt	Date and time when the task was last updated
+🚀 Installation & Setup
 
-status: Task status (todo, in-progress, done)
 
-createdAt: Date and time when the task was created
+Ensure your environment is ready:
 
-updatedAt: Date and time when the task was last updated
+Install a programming language (Python, JavaScript, etc.)
 
-Installation & Setup
+Open the project in your code editor (VSCode, PyCharm, etc.)
 
-Ensure your development environment is ready:
-
-Install your preferred programming language (Python, JavaScript, etc.)
-
-Use a code editor like VSCode or PyCharm
-
-Usage
-
-Run the CLI application from the command line with the following commands:
-
-Add a new task
+💻 Usage
+Add a task
 task-cli add "Buy groceries"
 # Output: Task added successfully (ID: 1)
 
-Update or delete a task
+Update a task
 task-cli update 1 "Buy groceries and cook dinner"
+
+Delete a task
 task-cli delete 1
 
-Mark a task as in progress or done
+Mark a task
 task-cli mark-in-progress 1
 task-cli mark-done 1
 
@@ -61,28 +60,32 @@ task-cli list done
 task-cli list todo
 task-cli list in-progress
 
-Implementation Guidelines
+🛠 Implementation Guidelines
 
-Use positional arguments to accept user inputs.
+Use positional arguments for user inputs
 
-Store tasks in a JSON file in the project directory.
+Store tasks in a JSON file in the project directory
 
-Create the JSON file if it does not exist.
+Automatically create the JSON file if it does not exist
 
-Use the native file system module of your language; no external libraries required.
+Use the native file system of your programming language
 
-Handle errors and edge cases gracefully.
+Handle errors and edge cases gracefully
 
-Project Roadmap
+No external libraries required
 
-Set up CLI structure – Handle user inputs
+📈 Project Roadmap
 
-Implement features – Add, list, update, delete, mark tasks
+Build basic CLI structure
 
-Testing & debugging – Verify tasks are correctly stored in JSON
+Implement Add, List, Update, Delete features
 
-Finalize project – Clean code, add comments, and polish README
+Implement status marking (in-progress, done)
 
-License
+Test and debug thoroughly
 
-This project is open source and free to use.
+Finalize project with clean code and documentation
+
+🎉 License
+
+This project is open-source and free to use.
