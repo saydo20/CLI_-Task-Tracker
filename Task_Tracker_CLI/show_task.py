@@ -1,13 +1,25 @@
 import json
-def show_tasks():
+
+def show_tasks(task_file):
     try:
-        with open("tasks.json", "r") as file:
+        with open(task_file, "r") as file:
             tasks = json.load(file)
             if not tasks:
                 print("There are no tasks.")
+                return 0
             else:
-                print("\nYour tasks are:")
+                grouped_tasks = {}
                 for task in tasks:
-                    print(f"{task['id']}. {task['description']} [{task['status']}]")
+                    status = task['status']
+                    if status not in grouped_tasks:
+                        grouped_tasks[status] = []
+                    grouped_tasks[status].append(task) 
+                    
+            for status, tasks_list in grouped_tasks.items():
+                print(f"\nTasks {status}:")
+                for task in tasks_list:
+                    print(f"{task['id']}. {task['description']}")
+
     except FileNotFoundError:
-        print("There is no tasks file.")
+        print("\nThere is no tasks file.")
+        return 0

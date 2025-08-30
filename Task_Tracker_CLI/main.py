@@ -2,7 +2,6 @@ from show_task import show_tasks
 from add_task import add_task
 from delete_task import delete_task
 from update_task import update_task
-import sys
 
 def show_menu():
     print("\n--- Task Manager ---")
