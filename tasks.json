@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "description": "go to the gym",
+    "status": "to_do",
+    "created_date": "2025-08-30T16:38:32.948500",
+    "updated_date": "2025-08-30T16:38:32.948500"
+  },
+  {
+    "id": 2,
+    "description": "go to the school",
+    "status": "to_do",
+    "created_date": "2025-08-30T16:38:42.081667",
+    "updated_date": "2025-08-30T16:38:42.081667"
+  },
+  {
+    "id": 3,
+    "description": "wake up at 7am",
+    "status": "done",
+    "created_date": "2025-08-30T16:38:54.356256",
+    "updated_date": "2025-08-30T16:39:01.528443"
+  }
+]
